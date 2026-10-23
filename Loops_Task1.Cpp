@@ -1,4 +1,5 @@
-/* LUMUMBA MERCYLINE AFWANDE 
+/* 
+LUMUMBA MERCYLINE AFWANDE 
 CT101/G/28529/25
 A C++ program to automate calculation of employees bonus using for loop
 */
