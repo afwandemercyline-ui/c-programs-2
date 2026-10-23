@@ -1,7 +1,7 @@
 /*
 LUMUMBA MERCYLINE AFWANDE 
 CT101/G/28529/25
-A C++ program using 1D array for weekly revenue tracker
+A C++ program using array to monitor revenue and room occupancy 
 */
 #include <iostream>
 #include <cstdlib>
