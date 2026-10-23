@@ -1,0 +1,32 @@
+/*
+LUMUMBA MERCYLINE AFWANDE 
+CT101/G/28529/25
+A C++ program using do while loop for password verification system 
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string correctUser = "admin";
+    string correctPass = "secure123";
+    string inputUser, inputPass;
+
+    // Do-while loop to repeatedly prompt until correct credentials are entered
+    do {
+        cout << "Enter username: ";
+        cin >> inputUser;
+        cout << "Enter password: ";
+        cin >> inputPass;
+
+        if (inputUser == correctUser && inputPass == correctPass) {
+            cout << "Access Granted" << endl;
+            break;
+        } else {
+            cout << "Incorrect credentials, try again.\n" << endl;
+        }
+    } while (true);
+
+    return 0;
+}
