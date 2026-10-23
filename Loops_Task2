@@ -1,0 +1,42 @@
+/*
+LUMUMBA MERCYLINE AFWANDE 
+CT101/28529/25
+A C++ program using while loop for savings withdrawal system 
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance, withdrawalAmount;
+
+    cout << "Enter initial account balance: ";
+    cin >> balance;
+
+    // While loop for repeated withdrawals as long as balance is sufficient
+    while (balance > 0) {
+        cout << "\nCurrent Balance: " << balance << endl;
+        cout << "Enter withdrawal amount (Enter 0 or negative to exit): ";
+        cin >> withdrawalAmount;
+
+        if (withdrawalAmount <= 0) {
+            cout << "Exiting withdrawal system." << endl;
+            break;
+        }
+
+        if (withdrawalAmount > balance) {
+            cout << "Error: Withdrawal amount is greater than the balance! Transaction stopped." << endl;
+            break;
+        }
+
+        // Deduct amount and display remaining balance
+        balance -= withdrawalAmount;
+        cout << "Withdrawal successful. Remaining balance: " << balance << endl;
+
+        if (balance == 0) {
+            cout << "The account balance has become zero." << endl;
+            break;
+        }
+    }
+
+    return 0;
+}
